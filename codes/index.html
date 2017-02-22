@@ -1,0 +1,72 @@
+
+<!-- 旋转木马思路 -->
+<!-- 1、结构：舞台（perspective）> 容器（transform-style）> 图片 -->
+<!-- 2、图片绝对定位，共用一个中心点 -->
+<!-- 3、将图片围绕Y轴旋转一定度数，计算公式为： 360°/ 图片张数；-->
+<!-- 4、将图片沿着Z轴位移，位移像素可通过公式计算：r = 图片宽度一半/Math.tan(旋转角度一半/180*Math.PI); -->
+<!-- 5、这个公式计算出来的值刚好围成一个圈，可加一定的间距让图片之间有缝隙； -->
+<!-- 6、可直接为容器设置动画旋转起来，也可以通过js让用户点击图片时让图片旋转，每次旋转‘360°/图片张数’的角度即可； -->
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Transform3D - 旋转木马</title>
+	<style type="text/css">
+
+		/*自定义字体*/
+		@font-face {
+			font-family: '华文行楷';
+			src: url('../Fonts/华文行楷.ttf');
+		}
+
+		/*背景颜色*/
+		body {background-color: #000;}
+		/*标题*/
+		h1 {text-align: center; color: #fff; margin-top: 50px; font-family: '华文行楷';}
+
+
+		/*构造舞台，设置景深效果*/
+		div.stage {width: 140px; height: 193px; margin: 200px auto; perspective: 800px;}
+		/*设置容器，为容器添加动画并且设置通过transform-style模拟3D场景*/
+		div.container {width: 140px; height: 193px; transform-style: preserve-3d; position: relative;}
+		/*让图片绝对定位共用一个中心点；*/
+		section.box {width: 140px; height: 193px; position: absolute; border: 1px #ccc inset;}
+		/*将图片旋转一定角度围成一个圆，并设置在Z轴上的位移，围成一个圈；*/
+		.box1 {background: url('../images/1.jpeg'); transform: rotateY(0deg)   translateZ(240px);}
+		.box2 {background: url('../images/2.jpeg'); transform: rotateY(40deg)  translateZ(240px);}
+		.box3 {background: url('../images/3.jpeg'); transform: rotateY(80deg)  translateZ(240px);}
+		.box4 {background: url('../images/4.jpeg'); transform: rotateY(120deg) translateZ(240px);}
+		.box5 {background: url('../images/5.jpeg'); transform: rotateY(160deg) translateZ(240px);}
+		.box6 {background: url('../images/6.jpeg'); transform: rotateY(200deg) translateZ(240px);}
+		.box7 {background: url('../images/7.jpeg'); transform: rotateY(240deg) translateZ(240px);}
+		.box8 {background: url('../images/8.jpeg'); transform: rotateY(280deg) translateZ(240px);}
+		.box9 {background: url('../images/9.jpeg'); transform: rotateY(320deg) translateZ(240px);}
+		/*定义旋转动画*/
+		@keyframes rotate-animation {
+			from {transform: rotateY(0deg);}
+			to   {transform: rotateY(-360deg);}
+		}
+		div.container {animation: rotate-animation 10s linear infinite;}
+
+	</style>
+</head>
+<body>
+
+<h1>Jay Zhou</h1>
+<div class="stage">
+	<div class="container">
+		<section class="box box1"></section>
+		<section class="box box2"></section>
+		<section class="box box3"></section>
+		<section class="box box4"></section>
+		<section class="box box5"></section>
+		<section class="box box6"></section>
+		<section class="box box7"></section>
+		<section class="box box8"></section>
+		<section class="box box9"></section>
+	</div>
+</div>
+	
+</body>
+</html>
