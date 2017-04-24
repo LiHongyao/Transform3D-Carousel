@@ -13,13 +13,13 @@ h1 {
 	text-shadow: 2px 2px 2px orange;
 }
 
-@keyframes h1-animation {
+@keyframes scale-animation {
 	from {transform: scale(1);}
 	to {transform: scale(1.3);}
 }
 
 h1:hover {
-	animation: h1-animation .25s linear 4 alternate;
+	animation: scale-animation .25s linear 4 alternate;
 }
 
 /*旋转木马*/
