@@ -6,6 +6,7 @@ body {
 	background-color: rgba(0, 0, 0, .95);
 }
 
+/*标题*/
 h1 {
 	text-align: center;
 	color: #fff;
@@ -21,6 +22,7 @@ h1:hover {
 	animation: h1-animation .25s linear 4 alternate;
 }
 
+/*旋转木马*/
 .stage {
 	width: 150px;
 	height: 193px;
