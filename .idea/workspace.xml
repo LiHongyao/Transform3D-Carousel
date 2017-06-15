@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f7d46ff-f022-4255-b99c-3d48a5d7798c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/1.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/2.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/3.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/4.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/5.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/6.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/7.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/8.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/9.jpeg" afterPath="" />
-    </list>
+    <list default="true" id="1f7d46ff-f022-4255-b99c-3d48a5d7798c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -40,8 +28,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/stylesheets/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
-              <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+            <state relative-caret-position="450">
+              <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -227,12 +215,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497515697561</updated>
-      <workItem from="1497515700739" duration="776000" />
+      <workItem from="1497515700739" duration="839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="776000" />
+    <option name="totallyTimeSpent" value="839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -278,8 +266,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/stylesheets/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+        <state relative-caret-position="450">
+          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
           <folding />
         </state>
       </provider>
